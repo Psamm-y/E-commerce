@@ -5,6 +5,14 @@ import Recommended from './Recommended/Recommended';
 import Sidebar from './Sidebar/Sidebar';
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  //Input filter
+  const [query, setQuery] = useState('');
+
+  const handleInputChange = e = {
+    setQuery(e.target.value);
+  }
   return (
     <>
       <Sidebar />

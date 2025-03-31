@@ -4,6 +4,8 @@
 }
 .recommended-title {
   margin-left: 20rem;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 .recommended-btns button {
   padding: 10px 20px;

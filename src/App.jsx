@@ -6,9 +6,8 @@ import Sidebar from './Sidebar/Sidebar';
 import products from './db/data';
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-
-  //----------Input filter-----------
   const [query, setQuery] = useState('');
+  //----------Input filter-----------
 
   const filteredItems = products.filter(
     (product) =>
@@ -16,7 +15,16 @@ function App() {
   );
 
   //----------Radio filter-----------
-  const handleInputChange = (e) => setQuery(e.target.value);
+  const handleInputChange = (e) => setSelectedCategory(e.target.value);
+
+  //----------Buttons filter-----------
+  const handleClick = (e = setSelectedCategory(e.target.value));
+
+  function filteredData(products, selected, query) {
+    let filteredProducts = products;
+
+    //filtering input items
+  }
   return (
     <>
       <Sidebar />
